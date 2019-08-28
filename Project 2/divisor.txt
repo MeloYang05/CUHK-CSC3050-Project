@@ -1,0 +1,14 @@
+addi $v0, $zero, 5
+syscall
+add $t0, $v0, $zero
+addi $v0, $zero, 5
+syscall
+add $t1, $v0, $zero
+div $t0, $t1
+mflo $a0
+addi $v0, $zero, 1
+syscall
+mfhi $a0
+syscall
+addi $v0, $v0, 9
+syscall

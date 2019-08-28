@@ -1,0 +1,8 @@
+addi $v0, $zero, 5
+syscall
+add $t0, $v0, $zero
+sltiu $a0, $t0, -5
+addi $v0, $zero, 1
+syscall
+addi $v0, $v0, 9
+syscall

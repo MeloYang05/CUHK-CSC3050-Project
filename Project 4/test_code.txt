@@ -1,0 +1,21 @@
+//Group 1
+in_instruction[319:288]={6'b001000,`gr0,`gr1,16'b11};
+in_instruction[287:256]={6'b000000,`gr1,`gr1,`gr2,5'b0,6'b100000};
+in_instruction[255:224]={6'b001000,`gr2,`gr3,16'b1};
+in_instruction[223:192]={6'b000000,`gr2,`gr3,`gr4,5'b0,6'b100000};
+in_instruction[191:160]={6'b000010,26'b1};
+in_instruction[159:128]={6'b001000,`gr1,`gr5,16'b1};
+in_instruction[127:96]={6'b001000,`gr1,`gr5,16'b11};
+in_instruction[95:64]={6'b000000,`gr2,`gr3,`gr6,5'b0,6'b101010};
+in_instruction[63:32]={6'b000000,`gr4,`gr6,`gr7,5'b0,6'b100011};
+
+
+//Group 2
+in_instruction[319:288]={6'b101011,26'b0};
+in_instruction[287:256]={6'b100011,`gr0,`gr1,16'b0};
+in_instruction[255:224]={6'b001000,`gr1,`gr2,16'b11};
+in_instruction[223:192]={6'b001000,`gr2,`gr3,16'b11};
+in_instruction[191:160]={6'b000000,`gr2,`gr3,`gr4,5'b0,6'b100010};
+in_instruction[159:128]={6'b000000,`gr1,`gr4,`gr5,5'b0,6'b100100};
+in_instruction[127:96]={6'b001101,`gr4,`gr6,16'b11111};
+in_instruction[95:64]={6'b001000,`gr6,`gr7,16'b111111};
